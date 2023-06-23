@@ -29,8 +29,8 @@ const uploadImages = asyncHandler(async (req, res) => {
 const deleteImages = asyncHandler(async (req, res) => {
   const { id } = req.params;
   try {
-    const deleted = cloudinaryDeleteImg(id, "images");
-    res.json({ message: "Deleted" });
+    const deleted = await cloudinaryDeleteImg(id, "images");
+    res.json({ message: "Image deleted successfully!" });
   } catch (error) {
     throw new Error(error);
   }
