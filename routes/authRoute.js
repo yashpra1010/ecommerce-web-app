@@ -9,7 +9,7 @@ router.post("/login", loginUserCtrl);
 router.get("/all-users", getAllUsers);
 router.get("/refresh", handleRefreshToken);
 router.post("/forgot-password-token", forgotPasswordToken);
-router.post("/reset-password/:token", resetPassword);
+router.put("/reset-password/:token", resetPassword);
 router.put("/password",authMiddleware, updatePassword);
 router.get("/:id", authMiddleware, isAdmin, getAUser);
 router.delete("/:id", deleteUser);
