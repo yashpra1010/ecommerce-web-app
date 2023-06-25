@@ -2,7 +2,7 @@
 SwiftCart is an ecommerce website. This repo consists of backend using NodeJS + ExpressJS + Mongoose
 ---
 # API - Routes
----
+
 ### Authorization
 ```
 POST /api/user/register
