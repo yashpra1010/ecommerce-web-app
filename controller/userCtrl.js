@@ -11,7 +11,7 @@ const validateMongoDbId = require("../utils/validateMongoDB");
 const { generateRefreshToken } = require("../config/refreshToken");
 const crypto = require("crypto");
 const jwt = require("jsonwebtoken");
-const sendEmail = require("./emailCtrl");
+const { sendEmail } = require("./emailCtrl");
 
 // Create a User ----------------------------------------------
 
